@@ -1,9 +1,7 @@
 import java.awt.Color;
 
-
 public class Figure extends Object 
 {
-
     /**
      * A figure constant used to create a figure forming a square.
      */
