@@ -1,19 +1,3 @@
-/*
- * @(#)Game.java
- *
- * This work is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License, or (at your option) any later version.
- *
- * This work is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * Copyright (c) 2003 Per Cederberg. All rights reserved.
- */
-
 import java.awt.Button;
 import java.awt.Component;
 import java.awt.Container;
@@ -30,18 +14,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-/**
- * The Tetris game. This class controls all events in the game and
- * handles all the game logics. The game is started through user
- * interaction with the graphical game component provided by this 
- * class.
- *
- * @version  1.2
- * @author   Per Cederberg, per@percederberg.net
- */
 public class Game extends Object 
 {
-
     /**
      * The main square board. This board is used for the game itself.
      */
