@@ -1,36 +1,6 @@
-/*
- * @(#)Figure.java
- *
- * This work is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation; either version 2 of
- * the License, or (at your option) any later version.
- *
- * This work is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * Copyright (c) 2003 Per Cederberg. All rights reserved.
- */
-
 import java.awt.Color;
 
-/**
- * A class representing a Tetris square figure. Each figure consists 
- * of four connected squares in one of seven possible constellations. 
- * The figures may be rotated in 90 degree steps and have sideways and 
- * downwards movability.<p>
- * 
- * Each figure instance can have two states, either attached to a 
- * square board or not. When attached, all move and rotation 
- * operations are checked so that collisions do not occur with other
- * squares on the board. When not attached, any rotation can be made 
- * (and will be kept when attached to a new board).
- *
- * @version  1.2
- * @author   Per Cederberg, per@percederberg.net
- */
+
 public class Figure extends Object 
 {
 
@@ -92,7 +62,6 @@ public class Figure extends Object
      * between 0 and 3, but must also be less than the maxOrientation 
      * value.
      * 
-     * @see #maxOrientation
      */
     private int orientation = 0;
 
@@ -103,7 +72,6 @@ public class Figure extends Object
      * will be possible to rotate around one of its squares, which 
      * gives an erroneous effect.
      * 
-     * @see #orientation
      */
     private int maxOrientation = 4;
 
@@ -130,17 +98,6 @@ public class Figure extends Object
      * colors and orientations will be assigned.
      *
      * @param type      the figure type (one of the figure constants)
-     * 
-     * @see #SQUARE_FIGURE
-     * @see #LINE_FIGURE
-     * @see #S_FIGURE
-     * @see #Z_FIGURE
-     * @see #RIGHT_ANGLE_FIGURE
-     * @see #LEFT_ANGLE_FIGURE
-     * @see #TRIANGLE_FIGURE
-     * 
-     * @throws IllegalArgumentException if the figure type specified
-     *             is not recognized
      */
     public Figure(int type) throws IllegalArgumentException 
     {
@@ -151,17 +108,6 @@ public class Figure extends Object
      * Initializes the instance variables for a specified figure type.
      * 
      * @param type      the figure type (one of the figure constants)
-     * 
-     * @see #SQUARE_FIGURE
-     * @see #LINE_FIGURE
-     * @see #S_FIGURE
-     * @see #Z_FIGURE
-     * @see #RIGHT_ANGLE_FIGURE
-     * @see #LEFT_ANGLE_FIGURE
-     * @see #TRIANGLE_FIGURE
-     * 
-     * @throws IllegalArgumentException if the figure type specified
-     *             is not recognized
      */
     private void initialize(int type) throws IllegalArgumentException 
     {
@@ -281,7 +227,7 @@ public class Figure extends Object
      * only the bottom line visible, or centered onto the board. In 
      * both cases, the squares on the new board are checked for 
      * collisions. If the squares are already occupied, this method
-     * returns false and no attachment is made.<p>
+     * returns false and no attachment is made
      *
      * The horizontal and vertical coordinates will be reset for the 
      * figure, when centering the figure on the new board. The figure
@@ -369,7 +315,7 @@ public class Figure extends Object
 	    return !isAttached() || !canMoveTo(xPos, yPos + 1, orientation);
 	}
 
-	/**
+    /**
      * Checks if the figure is fully visible on the square board. If
      * the figure isn't attached to a board, false will be returned.
      * 
