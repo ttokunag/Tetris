@@ -1,19 +1,3 @@
-/*
- * @(#)SquareBoard.java
- *
- * This work is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License as 
- * published by the Free Software Foundation; either version 2 of 
- * the License, or (at your option) any later version.
- *
- * This work is distributed in the hope that it will be useful, 
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
- * GNU General Public License for more details.
- *
- * Copyright (c) 2003 Per Cederberg. All rights reserved.
- */
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -24,19 +8,8 @@ import java.awt.Insets;
 import java.awt.Rectangle;
 import java.util.Hashtable;
 
-/**
- * A Tetris square board. The board is rectangular and contains a grid
- * of colored squares. The board is considered to be constrained to
- * both sides (left and right), and to the bottom. There is no 
- * constraint to the top of the board, although colors assigned to 
- * positions above the board are not saved.
- *
- * @version  1.2
- * @author   Per Cederberg, per@percederberg.net
- */
 public class SquareBoard extends Object
 {
-
     /**
      * The board width (in squares)
      */
