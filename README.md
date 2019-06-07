@@ -1,7 +1,7 @@
 # Tetris
 ### Author: Tomoya Tokunaga(mailto: ttokunag@ucsd.edu)
 
-This repository contains source files of the game Tetris in Java language. 
+This repository contains source files of the game Tetris in Java language. This application originally is an assignment in my computer science class. I modified and improved the original version by adding some new features.<br>
 You can play the game by first cloning or downloading this repository, and move to `src` directory under `Tetris`. Finally, please call **`make`** or **`make play`** command in the terminal if you use MacOS or Linux. For the Windows users, first `javac *.java` and then `java Main`. 
 
 ## How to Play
