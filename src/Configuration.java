@@ -3,7 +3,6 @@ import java.util.Hashtable;
 
 public class Configuration extends Object 
 {
-
     /**
      * The internal configuration property values. This lookup table
      * is used to avoid setting configuration parameters in the system 
@@ -15,7 +14,7 @@ public class Configuration extends Object
     /**
      * Returns a configuration parameter value.
      * 
-     * @param key       the configuration parameter key
+     * @param key: the configuration parameter key
      * 
      * @return the configuration parameter value, or
      *         null if not set
